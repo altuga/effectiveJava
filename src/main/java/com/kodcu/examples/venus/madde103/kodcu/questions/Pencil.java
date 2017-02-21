@@ -1,4 +1,4 @@
-// Singleton with static factory - Page 17
+
 package com.kodcu.examples.venus.madde103.kodcu.questions;
 
 public class Pencil {
