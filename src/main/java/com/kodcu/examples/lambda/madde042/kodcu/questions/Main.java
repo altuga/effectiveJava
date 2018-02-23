@@ -9,6 +9,9 @@ public class Main {
 
     public static void main(String[] args) {
 
+
+        // TODO use Streams in Java 8
+
         List<String> list = new ArrayList<>();
         list.add("1");
         list.add("2");
@@ -32,7 +35,7 @@ public class Main {
 
         // TODO convert to lowercase
 
-        // TODO use Streams in Java 8
+
 
 
 
