@@ -2,6 +2,7 @@
 package com.kodcu.examples.venus.madde106;
 
 import java.util.Arrays;
+import java.util.EmptyStackException;
 
 public class Yigin {
 	private Object[] elements;
