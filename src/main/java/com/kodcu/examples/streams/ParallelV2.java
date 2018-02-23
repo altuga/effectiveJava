@@ -21,8 +21,11 @@ public class ParallelV2 {
     }
 
 
-
-
+    /**
+     *
+     * @param n limit
+     * @return number of primes
+     */
     static long pi(long n) {
 
         return LongStream.rangeClosed(2, n)
