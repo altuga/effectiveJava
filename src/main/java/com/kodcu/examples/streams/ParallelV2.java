@@ -29,7 +29,7 @@ public class ParallelV2 {
 
                 .mapToObj(BigInteger::valueOf)
 
-                .filter(i -> i.isProbablePrime(50)).parallel()
+                .filter(i -> i.isProbablePrime(50))
 
                 .count();
 
