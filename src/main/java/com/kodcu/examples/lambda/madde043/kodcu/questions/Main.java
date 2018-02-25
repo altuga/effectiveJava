@@ -1,4 +1,4 @@
-package com.kodcu.examples.lambda.madde042.kodcu.questions;
+package com.kodcu.examples.lambda.madde043.kodcu.questions;
 
 import java.time.Instant;
 import java.util.ArrayList;
