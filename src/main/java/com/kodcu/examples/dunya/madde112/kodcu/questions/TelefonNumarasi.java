@@ -38,8 +38,8 @@ public final class TelefonNumarasi {
 
 	public static void main(String[] args) {
 		Map<TelefonNumarasi, String> m = new HashMap<TelefonNumarasi, String>();
-		// create random TelefonNumarasi
-		// sort them accourding to city code
+		// TODO  : create random TelefonNumarasi
+		// TODO : sort them accourding to city code
 		m.put(new TelefonNumarasi(212, 317, 8327), "Ayse Teyze");
 		System.out.println(m.get(new TelefonNumarasi(707, 867, 5309)));
 	}
