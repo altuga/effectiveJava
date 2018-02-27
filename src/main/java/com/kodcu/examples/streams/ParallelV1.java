@@ -15,7 +15,7 @@ public class ParallelV1 {
 
 
 
-
+        // ilk 20 asal sayiyi ekrana basiyoruz
         primes().map(p -> TWO.pow(p.intValueExact()).subtract(ONE))
 
                 .filter(mersenne -> mersenne.isProbablePrime(50))
@@ -29,7 +29,7 @@ public class ParallelV1 {
 
 
     static Stream<BigInteger> primes() {
-
+            // siradaki olasi asal sayiyi veriyor
             return Stream.iterate(TWO, BigInteger::nextProbablePrime);
 
     }
