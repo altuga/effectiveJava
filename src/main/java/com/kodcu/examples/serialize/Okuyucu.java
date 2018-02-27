@@ -12,11 +12,11 @@ public class Okuyucu {
         ObjectInputStream oi = new ObjectInputStream(fi);
 
         // Read objects
-        Calisan pr1 = (Calisan) oi.readObject();
-        Calisan pr2 = (Calisan) oi.readObject();
+        Calisan efe = (Calisan) oi.readObject();
+        Calisan mehmet = (Calisan) oi.readObject();
 
-        System.out.println(pr1.toString());
-        System.out.println(pr2.toString());
+        System.out.println(efe.toString());
+        System.out.println(mehemt.toString());
 
         oi.close();
         fi.close();
