@@ -8,7 +8,7 @@ public class Factory {
     private static final Cheese[]  cheesesInStock = new Cheese[10];
 
 
-    // doing someting
+    // TODO doing something
 
     /**
      * @return an array containing all of the cheeses in the shop,
