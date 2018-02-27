@@ -11,12 +11,8 @@ public class Okuyucu {
         FileInputStream fi = new FileInputStream(new File("nesneler.txt"));
         ObjectInputStream oi = new ObjectInputStream(fi);
 
-        // Read objects
-        Calisan efe = (Calisan) oi.readObject();
-        Calisan mehmet = (Calisan) oi.readObject();
+        // TODO : Read objects
 
-        System.out.println(efe.toString());
-        System.out.println(mehemt.toString());
 
         oi.close();
         fi.close();
