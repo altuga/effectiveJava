@@ -12,12 +12,14 @@ public class BrokenComparator {
 
     public static void main(String[] args) {
 
-        // Questions  :  Print thirty-six combinations ?
+        // Soru  : 36 kombinasyonu ekrana  bastırınız ?
 
         Collection<Face> faces = Arrays.asList(Face.values());
         for (Iterator<Face> i = faces.iterator(); i.hasNext(); )
             for (Iterator<Face> j = faces.iterator(); j.hasNext(); )
                 System.out.println(i.next() + " " + j.next());
+
+
 
     }
 }
