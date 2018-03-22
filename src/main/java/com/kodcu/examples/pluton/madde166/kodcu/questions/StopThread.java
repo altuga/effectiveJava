@@ -4,7 +4,7 @@ package com.kodcu.examples.pluton.madde166.kodcu.questions;
 import java.util.concurrent.TimeUnit;
 
 public class StopThread {
-	private static volatile boolean stopRequested;
+	private static  boolean stopRequested;
 
 
 	// Bu uygulama nasıl calisir ?
