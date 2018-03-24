@@ -1,40 +1,30 @@
 package com.kodcu.examples.streams;
 
 import java.math.BigInteger;
-import java.util.stream.LongStream;
+import java.util.ArrayList;
 import java.util.stream.Stream;
-
-import static java.math.BigInteger.ONE;
-
 
 public class ParallelV2 {
 
-    final static BigInteger TWO = BigInteger.valueOf(2);
+    public static final ArrayList<Long> myList = new ArrayList<>();
+
+
 
     public static void main(String[] args) {
 
+        Stream<Long> baseStream =
+                myList.stream();
 
+        long start = System.nanoTime();
 
-        long result = pi(1_000_0000);
-        System.out.println("Result : " + result );
+        for (int i = 0; i< 1_000_0000; i ++) {
+            myList.add((long)i);
+        }
 
-    }
-
-
-    /**
-     *
-     * @param n limit
-     * @return number of primes
-     */
-    static long pi(long n) {
-
-        return LongStream.rangeClosed(2, n)
-
-                .mapToObj(BigInteger::valueOf)
-
-                .filter(i -> i.isProbablePrime(50))
-
-                .count();
-
+        baseStream.map(value -> new BigInteger(value+""))
+                .filter( value -> value.isProbablePrime(50)).count();
+        long duration = (System.nanoTime() - start) / 1_000_000;;
+        System.out.println("Result: " + duration + " - "
+                + baseStream.isParallel());
     }
 }
