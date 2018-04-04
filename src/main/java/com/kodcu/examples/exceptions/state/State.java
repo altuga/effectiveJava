@@ -29,8 +29,6 @@ package com.kodcu.examples.exceptions.state;
  */
 public interface State {
 
-  void onEnterState();
-
   void observe();
 
 }

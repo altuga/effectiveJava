@@ -22,34 +22,41 @@
  */
 package com.kodcu.examples.exceptions.state;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 /**
  * 
- * Peaceful state.
- *
+ * SeatSales has internal state that defines its behavior.
+ * 
  */
-public class PeacefulState implements State {
+public class SeatSales {
 
-  private static final Logger LOGGER = LoggerFactory.getLogger(PeacefulState.class);
+  private State state;
 
-  private Mammoth mammoth;
+  public SeatSales() {
+    state = new SeatEmptyState(this);
+  }
 
-  public PeacefulState(Mammoth mammoth) {
-    this.mammoth = mammoth;
+  /**
+   * Makes time pass for the flight sales
+   */
+  public void timePasses() {
+    if (state.getClass().equals(SeatEmptyState.class)) {
+      changeStateTo(new SeatIsFullState(this));
+    } else {
+      changeStateTo(new SeatEmptyState(this));
+    }
+  }
+
+  public void changeStateTo(State newState) {
+    this.state = newState;
+
   }
 
   @Override
+  public String toString() {
+    return "The Seat";
+  }
+
   public void observe() {
-    LOGGER.info("{} is calm and peaceful.", mammoth);
+    this.state.observe();
   }
-
-  @Override
-  public void onEnterState() {
-    LOGGER.info("{} calms down.", mammoth);
-  }
-
-
-
 }

@@ -30,24 +30,20 @@ import org.slf4j.LoggerFactory;
  * Angry state.
  *
  */
-public class AngryState implements State {
+public class SeatIsFullState implements State {
 
-  private static final Logger LOGGER = LoggerFactory.getLogger(AngryState.class);
+  private static final Logger LOGGER = LoggerFactory.getLogger(SeatIsFullState.class);
 
-  private Mammoth mammoth;
+  private SeatSales seatSales;
 
-  public AngryState(Mammoth mammoth) {
-    this.mammoth = mammoth;
+  public SeatIsFullState(SeatSales seatSales) {
+    this.seatSales = seatSales;
   }
 
   @Override
   public void observe() {
-    LOGGER.info("{} is furious!", mammoth);
+    LOGGER.info("{} Seat Is Full, sorry!", seatSales);
   }
 
-  @Override
-  public void onEnterState() {
-    LOGGER.info("{} gets angry!", mammoth);
-  }
 
 }
