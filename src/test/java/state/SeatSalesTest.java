@@ -91,7 +91,7 @@ public class SeatSalesTest {
     assertEquals(3 , appender.getLogSize());
 
 
-    // TODO 1 - Add stress state
+    // TODO 1 - Add rezerved state
     // TODO 2 - if same state entered then throw an Exception
     // TODO 3 - if state is null then throw an Exception
 
