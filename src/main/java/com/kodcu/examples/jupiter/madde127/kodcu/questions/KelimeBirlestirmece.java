@@ -22,13 +22,15 @@ public class KelimeBirlestirmece {
                 "Ot"));
 
         // TODO
+
         /*
         Set<Integer> ints = new HashSet<Integer>(Arrays.asList(12, 13, 14));
-        Set<Integer> go = birlestir(isimler, ints);
+        Set<Integer> go = union(isimler, ints);
         for (Integer intValue : go) {
             System.out.println(intValue);
         }
         */
+
 
 
 

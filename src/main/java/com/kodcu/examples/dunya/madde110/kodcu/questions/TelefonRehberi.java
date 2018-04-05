@@ -50,6 +50,6 @@ public final class TelefonRehberi {
     public static void main(String[] args) {
         Map<TelefonRehberi, String> m = new HashMap<TelefonRehberi, String>();
         m.put(new TelefonRehberi(707, 867, 5309), "Ayse");
-        // print out HashMap content in style
+        // TODO  print out HashMap content in style
     }
 }

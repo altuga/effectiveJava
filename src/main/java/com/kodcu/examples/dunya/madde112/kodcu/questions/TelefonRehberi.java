@@ -4,12 +4,12 @@ package com.kodcu.examples.dunya.madde112.kodcu.questions;
 import java.util.HashMap;
 import java.util.Map;
 
-public final class TelefonNumarasi {
+public final class TelefonRehberi {
 	private final short alanKod;
 	private final short prefix;
 	private final short numara;
 
-	public TelefonNumarasi(int alanKod, int prefix, int numara) {
+	public TelefonRehberi(int alanKod, int prefix, int numara) {
 		numaraKontrol(alanKod, 999, "alan kod");
 		numaraKontrol(prefix, 999, "prefix");
 		numaraKontrol(numara, 9999, "numara");
@@ -27,9 +27,9 @@ public final class TelefonNumarasi {
 	public boolean equals(Object o) {
 		if (o == this)
 			return true;
-		if (!(o instanceof TelefonNumarasi))
+		if (!(o instanceof TelefonRehberi))
 			return false;
-		TelefonNumarasi pn = (TelefonNumarasi) o;
+		TelefonRehberi pn = (TelefonRehberi) o;
 		return pn.numara == numara && pn.prefix == prefix
 				&& pn.alanKod == alanKod;
 	}
@@ -37,10 +37,10 @@ public final class TelefonNumarasi {
 
 
 	public static void main(String[] args) {
-		Map<TelefonNumarasi, String> m = new HashMap<TelefonNumarasi, String>();
-		// TODO  : create random TelefonNumarasi
+		Map<TelefonRehberi, String> m = new HashMap<TelefonRehberi, String>();
+		// TODO  : create random TelefonRehberi
 		// TODO : sort them accourding to city code
-		m.put(new TelefonNumarasi(212, 317, 8327), "Ayse Teyze");
-		System.out.println(m.get(new TelefonNumarasi(707, 867, 5309)));
+		m.put(new TelefonRehberi(212, 317, 8327), "Ayse Teyze");
+		System.out.println(m.get(new TelefonRehberi(707, 867, 5309)));
 	}
 }
