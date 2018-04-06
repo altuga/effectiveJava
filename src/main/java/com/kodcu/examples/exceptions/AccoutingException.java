@@ -3,8 +3,8 @@ package com.kodcu.examples.exceptions;
 /**
  * Ders : Eğer kendi hata sınıflarımızı yapacaksak,
  * Öncelikle RuntimeException'dan türetmeyi düşünmeliyiz.
- * Exception sınıfından türetmek ancak zorunlu koşullarda olmalı
- * Error dan türetmeyi aklımızdan geçirmeyelim  .
+ * Exception sınıfından türetirken iki kere düşünün
+ * Error dan türetmeyi iyi bir fikir değil .
  */
 public class AccoutingException extends RuntimeException {
 
