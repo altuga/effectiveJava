@@ -10,30 +10,29 @@ public class Main {
     public static void main(String[] args) {
 
 
-        // TODO use Streams in Java 8
-
+        // TODO convert to List of Integer and print
         List<String> list = new ArrayList<>();
         list.add("1");
         list.add("2");
         list.add("3");
 
-       // TODO convert to List of Integer and print
 
+        // TODO print smaller then now
 
         List<Instant> listOfDates = new ArrayList<>();
         listOfDates.add(Instant.parse("2017-10-23T10:12:35Z"));
         listOfDates.add(Instant.parse("2017-11-23T10:12:35Z"));
         listOfDates.add(Instant.parse("2018-12-23T10:12:35Z"));
 
-        // TODO print smaller then now
 
+        // TODO convert to lowercase
 
         List<String> listOfNames = new ArrayList<>();
         listOfNames.add("HELLO");
         listOfNames.add("AFRICA");
         listOfNames.add("hoW are you do'in");
 
-        // TODO convert to lowercase
+
 
 
 
